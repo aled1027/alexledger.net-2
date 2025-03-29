@@ -68,3 +68,8 @@
 .prose {
     max-width: 40rem;
 }
+
+
+.center-children>* {
+    margin-inline: auto;
+}

@@ -36,7 +36,7 @@
 
 <section class="hero">
 	<h1 class="font-decorative size-step-7">Alex Ledger</h1>
-	<div class="size-step-2 mt-2xs">
+	<div class="size-step-2 mt-2xs hero-fade-in">
 		<p class="mt-0">
 			I'm a web designer and developer from Portland, Oregon. I work with businesses to design and
 			build websites.
@@ -56,10 +56,33 @@
 		{/each}
 	</div>
 </section>
+<section class="center-children mt-3xl">
+	<!-- TODO: maybe write in web component so it doesn't inherit css -->
+	<script
+		async
+		data-uid="da73872bd8"
+		src="https://alex-ledger.kit.com/da73872bd8/index.js"
+	></script>
+</section>
 
 <style>
 	.hero p {
 		max-width: 40ch;
+		line-height: 1.4;
+		text-wrap: pretty;
+	}
+
+	.hero-fade-in {
+		opacity: 0;
+		animation: fadeIn 1s forwards;
+		transform: translateY(100px);
+	}
+
+	@keyframes fadeIn {
+		to {
+			opacity: 1;
+			transform: translateY(0);
+		}
 	}
 
 	.project-grid {
