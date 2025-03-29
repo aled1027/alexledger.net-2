@@ -43,7 +43,7 @@
 		</p>
 		<p class="mt-m">
 			I specialize in creating beautiful, functional websites that help businesses grow. I focus on
-			combining good fundamentals— strong, clear copy and design— with a little bit of magic to make
+			combining good fundamentals— strong, clear copy and design— with a sprinkle of magic to make
 			the experience fun and attention-grabbing.
 		</p>
 	</div>
