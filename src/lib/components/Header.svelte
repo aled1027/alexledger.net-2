@@ -37,7 +37,7 @@
 		<div class="site-header__logo">
 			<a href="/" class="site-header__logo-link">Alex Ledger</a>
 		</div>
-		<div class="site-header__nav-wrapper">
+		<!-- <div class="site-header__nav-wrapper">
 			<button
 				class="site-header__nav-toggle"
 				type="button"
@@ -64,7 +64,7 @@
 					{/each}
 				</ul>
 			</nav>
-		</div>
+		</div> -->
 	</div>
 </header>
 
