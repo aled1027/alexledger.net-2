@@ -87,7 +87,7 @@
 
 	.project-grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(30ch, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(clamp(20rem, 47%, 33rem), 1fr));
 		gap: 1.25rem;
 	}
 
