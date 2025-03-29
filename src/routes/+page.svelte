@@ -1,32 +1,29 @@
 <script lang="ts">
+	import type { Project } from '$lib/types';
 	import ProjectCard from '$lib/components/ProjectCard.svelte';
 	import AnnaNeshyba from '$lib/assets/anna-neshyba.png';
 	import Metrion from '$lib/assets/metrion.png';
 	import Seastar from '$lib/assets/seastar.png';
 	import GiveMaxLife from '$lib/assets/give-max-life.png';
 
-	const projects = [
+	const projects: Project[] = [
 		{
 			projectName: 'Anna Neshyba',
-			description: "An illustrator's portfolio website",
 			imageUrl: AnnaNeshyba,
 			imageAlt: 'Screenshot of the Anna Neshyba website'
 		},
 		{
 			projectName: 'Metrion',
-			description: 'An artificial intelligence and geospatial data consultancy',
 			imageUrl: Metrion,
 			imageAlt: 'Screenshot of the Metrion website'
 		},
 		{
 			projectName: 'Seastar',
-			description: 'Personal coaching website',
 			imageUrl: Seastar,
 			imageAlt: 'Screenshot of the Seastar website'
 		},
 		{
 			projectName: 'Give Max Life',
-			description: 'A pediatric cancer charity',
 			imageUrl: GiveMaxLife,
 			imageAlt: 'Screenshot of the Give Max Life website'
 		}

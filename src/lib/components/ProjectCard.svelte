@@ -26,6 +26,8 @@
 		border: 0.125px solid var(--card-border-color);
 		border-radius: 4px;
 		width: 100%;
+		box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+		overflow: hidden;
 
 		display: flex;
 		flex-direction: column;
@@ -50,6 +52,14 @@
 		border-bottom-right-radius: 4px;
 		overflow: hidden;
 		position: relative;
+
+		transition:
+			transform 0.3s ease-in-out,
+			filter 0.3s ease-in-out;
 	}
 
+	.project-card:hover .project-card__asset-wrapper {
+		transform: scale(1.03);
+		filter: brightness(1.05);
+	}
 </style>
