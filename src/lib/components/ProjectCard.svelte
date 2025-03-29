@@ -1,9 +1,11 @@
 <script lang="ts">
 	import type { Project } from '$lib/types';
-	let { project }: { project: Project } = $props();
+	let { project, cardColor }: { project: Project; cardColor?: string } = $props();
+
+	let theCardColor = $derived(cardColor || 'hsl(255.65, 45%, 90%)');
 </script>
 
-<div class="project-card">
+<div class="project-card" style="--card-color: {theCardColor}">
 	<div class="project-card__title-wrapper">
 		<h3 class="project-card__title">{project.projectName}</h3>
 	</div>
@@ -16,11 +18,10 @@
 
 <style>
 	.project-card {
-		--light-purple: hsl(255.65, 45%, 90%);
-		--dark-purple: hsl(255.65, 45%, 30%);
-		--card-border-color: var(--dark-purple);
-		--card-border-color-light: hsl(from var(--dark-purple) h s l / 0.2);
-		--card-bg-color: hsl(from var(--light-purple) h s l / 0.6);
+		--card-color: hsl(255.65, 45%, 90%);
+		--card-border-color: hsl(from var(--card-color) h s 70%);
+		--card-border-color-light: hsl(from var(--card-border-color) h s l / 0.5);
+		--card-bg-color: hsl(from var(--card-color) h s l / 0.25);
 
 		background: var(--card-bg-color);
 		border: 0.125px solid var(--card-border-color);
@@ -36,12 +37,14 @@
 	}
 
 	.project-card__title-wrapper {
-		padding: 1rem;
+		/* Trying fibonaccia for fun */
+		padding-block: 13px;
+		padding-inline: 21px;
 		border-bottom: 0.5px solid var(--card-border-color-light);
 	}
 
 	.project-card__title {
-		font-size: var(--size-step-0);
+		font-size: var(--size-step--1);
 		text-decoration: none;
 	}
 

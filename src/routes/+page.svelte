@@ -10,22 +10,26 @@
 		{
 			projectName: 'Anna Neshyba',
 			imageUrl: AnnaNeshyba,
-			imageAlt: 'Screenshot of the Anna Neshyba website'
+			imageAlt: 'Screenshot of the Anna Neshyba website',
+			cardColor: '#D3DCD9'
 		},
 		{
 			projectName: 'Metrion',
 			imageUrl: Metrion,
-			imageAlt: 'Screenshot of the Metrion website'
-		},
-		{
-			projectName: 'Seastar',
-			imageUrl: Seastar,
-			imageAlt: 'Screenshot of the Seastar website'
+			imageAlt: 'Screenshot of the Metrion website',
+			cardColor: '#8992cb'
 		},
 		{
 			projectName: 'Give Max Life',
 			imageUrl: GiveMaxLife,
-			imageAlt: 'Screenshot of the Give Max Life website'
+			imageAlt: 'Screenshot of the Give Max Life website',
+			cardColor: '#9335D1'
+		},
+		{
+			projectName: 'Seastar',
+			imageUrl: Seastar,
+			imageAlt: 'Screenshot of the Seastar website',
+			cardColor: '#AAB199'
 		}
 	];
 </script>
@@ -48,7 +52,7 @@
 	<h2 class="small-heading">MY WORK</h2>
 	<div class="project-grid mt-l">
 		{#each projects as project}
-			<ProjectCard {project} />
+			<ProjectCard {project} cardColor={project.cardColor} />
 		{/each}
 	</div>
 </section>
