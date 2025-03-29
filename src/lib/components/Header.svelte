@@ -35,7 +35,7 @@
 	<div class="site-header__inner repel" data-is-home={isHome}>
 		<a class="skip-link visually-hidden" href="#content">Skip to main content</a>
 		<div class="site-header__logo">
-			<a href="/" class="site-header__logo-link">METRION</a>
+			<a href="/" class="site-header__logo-link">Alex Ledger</a>
 		</div>
 		<div class="site-header__nav-wrapper">
 			<button
