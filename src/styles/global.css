@@ -9,6 +9,22 @@
   navigation: auto;
 }
 
+/* This view transition code from https://jakearchibald.com/2024/view-transitions-handling-aspect-ratio-changes/ */
+
+::view-transition-old(heading-1),
+::view-transition-new(heading-1) {
+  /* Make the text views match the height of their group */
+  height: 100%;
+  /* Set the other dimension to auto,
+     which for images means they maintain their aspect ratio */
+  width: auto;
+}
+
+::view-transition-group(heading-1) {
+  /* Clip the views as they overflow the group */
+  overflow: clip;
+}
+
 :root {
   view-transition-name: root;
 }
@@ -42,6 +58,12 @@ h1 {
   line-height: var(--leading-tight);
   font-size: var(--size-step-6);
   max-width: 20ch;
+  height: auto;
+
+  font-family: var(--font-decorative);
+
+  /* This isn't quite clean enough to keep */
+  /* view-transition-name: heading-1; */
 }
 
 h2 {
@@ -72,7 +94,7 @@ a {
 p {
   line-height: var(--leading-loose);
   margin: 0;
-  margin-block-start: 1lh;
+  margin-block-start: 1em;
 }
 
 small {
@@ -291,9 +313,7 @@ svg[role='img'][width][height] {
   padding: var(--space-xs);
 }
 
-form {
-  max-width: var(--content-width-narrow);
-}
+form {}
 
 /* There's a .flow composition, but this prevents forms from having to have that applied where markup is harder to control in certain systems. It still uses the --flow-space variables though to make managing space easier */
 form>*+* {

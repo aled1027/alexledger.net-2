@@ -46,19 +46,18 @@ button.site-header__action-button {
 }
 
 .site-header__nav-list {
-    display: flex;
+    display: grid;
+    grid-template-columns: 6ch 6ch 6ch;
     justify-content: center;
     align-items: center;
     gap: var(--space-l);
     padding: 0;
     margin: 0;
-
     list-style: none;
     text-decoration: none;
 }
 
 .site-header__nav-list-item {
-    /* color: var(--color-text); */
     text-decoration: none;
 }
 
