@@ -11,7 +11,11 @@
 	</div>
 	<div class="project-card__middle-entry project-card__scale-animation padding-4">
 		<div class="project-card__asset-wrapper">
-			<img class="project-card__cover-asset" src={project.imageUrl} alt={project.imageAlt} />
+			<enhanced:img
+				class="project-card__cover-asset"
+				src={project.imageUrl}
+				alt={project.imageAlt}
+			/>
 		</div>
 	</div>
 </div>

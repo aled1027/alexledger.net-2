@@ -2,7 +2,7 @@
 
 ## TODO:
 
-- Add plausible
+- Copy posts over
 
 ## Checklist
 

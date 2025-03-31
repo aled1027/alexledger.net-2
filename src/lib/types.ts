@@ -1,6 +1,6 @@
 export interface Project {
     projectName: string;
-    imageUrl: string;
+    imageUrl: any;
     imageAlt: string;
     cardColor?: string;
 }
