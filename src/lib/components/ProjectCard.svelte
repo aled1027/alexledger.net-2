@@ -15,6 +15,7 @@
 				class="project-card__cover-asset"
 				src={project.imageUrl}
 				alt={project.imageAlt}
+				sizes="(min-width: 768px) 50vw, 100vw"
 			/>
 		</div>
 	</div>
@@ -68,5 +69,11 @@
 	.project-card:hover .project-card__asset-wrapper {
 		transform: scale(1.03);
 		filter: brightness(1.05);
+	}
+
+	.project-card__cover-asset {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
 	}
 </style>

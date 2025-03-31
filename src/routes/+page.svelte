@@ -1,10 +1,10 @@
 <script lang="ts">
 	import type { Project } from '$lib/types';
 	import ProjectCard from '$lib/components/ProjectCard.svelte';
-	import AnnaNeshyba from '$lib/assets/anna-neshyba.png?enhanced';
-	import Metrion from '$lib/assets/metrion.png?enhanced';
-	import Seastar from '$lib/assets/seastar.png?enhanced';
-	import GiveMaxLife from '$lib/assets/give-max-life.png?enhanced';
+	import AnnaNeshyba from '$lib/assets/anna-neshyba.png?enhanced&format=webp';
+	import Metrion from '$lib/assets/metrion.png?enhanced&format=webp';
+	import Seastar from '$lib/assets/seastar.png?enhanced&format=webp';
+	import GiveMaxLife from '$lib/assets/give-max-life.png?enhanced&format=webp';
 
 	const projects: Project[] = [
 		{
