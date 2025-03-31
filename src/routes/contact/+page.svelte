@@ -1,7 +1,7 @@
 <script lang="ts">
 </script>
 
-<section class="contact">
+<section class="contact" data-narrow-main>
 	<h1 class="font-decorative">Contact</h1>
 	<p class="mt-half-em">I'd love to chat with you about how I can help you grow your business.</p>
 	<p>
@@ -25,11 +25,6 @@
 </section>
 
 <style>
-	.contact {
-		max-width: var(--content-width-narrow);
-		margin-inline: auto;
-	}
-
 	.contact button {
 		padding-inline: 1.5em;
 		padding-block: 1em;

@@ -405,6 +405,10 @@ main {
   margin-block-end: 0;
 }
 
+main:has([data-narrow-main]) {
+  width: var(--content-width-narrow);
+}
+
 @media (prefers-reduced-motion: reduce) {
 
   /* https://www.a11yproject.com/posts/understanding-vestibular-disorders/ */

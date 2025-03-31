@@ -1,7 +1,7 @@
 <script lang="ts">
 </script>
 
-<section class="about">
+<section class="about" data-narrow-main>
 	<h1>Alex Ledger</h1>
 	<p class="mt-half-em">
 		I'm a web designer and developer from Portland, Oregon. I work with businesses to design and
@@ -28,10 +28,3 @@
 		<a href="https://bsky.app/profile/alexledger.bsky.social">bluesky</a>.
 	</p>
 </section>
-
-<style>
-	.about {
-		max-width: var(--content-width-narrow);
-		margin-inline: auto;
-	}
-</style>
