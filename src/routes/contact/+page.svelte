@@ -31,14 +31,9 @@
 	}
 
 	.contact button {
-		/* Playing with fibonacci numbers for button size */
-		padding-inline: 34px;
-		padding-block: 21px;
-
-		padding-inline: 21px;
-		padding-block: 13px;
-		font-size: var(--size-step-1);
-		font-weight: var(--font-semibold);
+		padding-inline: 1.5em;
+		padding-block: 1em;
+		font-weight: var(--font-bold);
 	}
 
 	.contact .input-group {
