@@ -3,7 +3,7 @@
 
 <section class="contact" data-narrow-main>
 	<h1 class="font-decorative">Contact</h1>
-	<p class="mt-half-em">I'd love to chat with you about how I can help you grow your business.</p>
+	<p>I'd love to chat with you about how I can help you grow your business.</p>
 	<p>
 		You can book an initial call by filling out the form below or email me: hello@alexledger.net.
 	</p>

@@ -40,12 +40,12 @@
 
 <section class="hero">
 	<h1 class="font-decorative size-step-7">Alex Ledger</h1>
-	<div class="size-step-2 mt-2xs hero-fade-in">
-		<p class="mt-0">
+	<div class="size-step-2 hero-fade-in">
+		<p>
 			I'm a web designer and developer from Portland, Oregon. I work with businesses to design and
 			build websites.
 		</p>
-		<p class="mt-m">
+		<p>
 			I specialize in creating beautiful, functional websites that help businesses grow. I focus on
 			combining good fundamentals— strong, clear copy and design— with a sprinkle of magic to make
 			the experience fun and attention-grabbing.
@@ -73,7 +73,6 @@
 	.hero p {
 		max-width: 40ch;
 		line-height: 1.4;
-		text-wrap: pretty;
 	}
 
 	.hero-fade-in {

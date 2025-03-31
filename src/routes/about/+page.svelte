@@ -3,7 +3,7 @@
 
 <section class="about" data-narrow-main>
 	<h1>Alex Ledger</h1>
-	<p class="mt-half-em">
+	<p>
 		I'm a web designer and developer from Portland, Oregon. I work with businesses to design and
 		build websites.
 	</p>
