@@ -31,10 +31,6 @@ body {
   overflow-x: hidden;
 }
 
-body:has(.about) {
-  background: #210341;
-}
-
 :is(h1, h2, h3, h4) {
   line-height: var(--leading-tight);
   text-wrap: balance;
