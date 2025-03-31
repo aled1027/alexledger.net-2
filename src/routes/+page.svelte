@@ -1,9 +1,13 @@
 <script lang="ts">
 	import type { Project } from '$lib/types';
 	import ProjectCard from '$lib/components/ProjectCard.svelte';
+	// @ts-ignore -- Image imports with query parameters
 	import AnnaNeshyba from '$lib/assets/anna-neshyba.png?enhanced&format=webp';
+	// @ts-ignore -- Image imports with query parameters
 	import Metrion from '$lib/assets/metrion.png?enhanced&format=webp';
+	// @ts-ignore -- Image imports with query parameters
 	import Seastar from '$lib/assets/seastar.png?enhanced&format=webp';
+	// @ts-ignore -- Image imports with query parameters
 	import GiveMaxLife from '$lib/assets/give-max-life.png?enhanced&format=webp';
 
 	const projects: Project[] = [
